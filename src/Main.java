@@ -2,16 +2,14 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Ctrl+1 with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Shape triangle = new Triangle();
+        Shape circle = new Circle();
+        Shape rectangle = new Rectangle();
+        Shape otherShape = new OtherShape("Custom Shape");
 
-        // Press Alt+Shift+X or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Alt+Shift+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+Shift+B.
-            System.out.println("i = " + i);
-        }
+        PrinterFigure.printFigure(triangle); // Output: Triangle
+        PrinterFigure.printFigure(circle);   // Output: Circle
+        PrinterFigure.printFigure(rectangle); // Output: Rectangle
+        PrinterFigure.printFigure(otherShape); // Output: Custom Shape
     }
 }

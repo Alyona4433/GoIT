@@ -1,6 +1,3 @@
-public class Shape {
-
-    public String getName() {
-
-    }
+abstract public class Shape {
+    abstract public String getName();
 }

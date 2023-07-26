@@ -1,5 +1,5 @@
 public class PrinterFigure {
-    public void printerfigure (Shape shape) {
+    public static void printFigure(Shape shape) {
         System.out.println(shape.getName());
     }
 }
